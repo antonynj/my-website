@@ -27,7 +27,6 @@ function Carde() {
         <CardMedia
           className={classes.media}
           image="/food/tandoori.jpg"
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -52,7 +51,6 @@ function Cardee() {
         <CardMedia
           className={classes.media}
           image="/food/gobi.jpg"
-          title="Contemplative Reptile" 
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -77,7 +75,6 @@ function Cardeee() {
         <CardMedia
           className={classes.media}
           image="/food/chilli.jpg"
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
