@@ -17,7 +17,6 @@ export default function Footer() {
           <Container maxWidth='lg'>
             
               <Grid item xs={12} >
-                <Box style={{fontSize: 18 }}  textAlign="center" borderBottom={2}>Social Network</Box>
                 <Box>
                 
                 <Button 

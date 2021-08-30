@@ -1,11 +1,11 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { Grid } from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -90,7 +90,7 @@ function Cardeee() {
   );
 }
 
-export default function SectionTwo()
+function SectionOne()
 {
     const classes = useStyles();
     return(<div><Typography variant="h2" component="h2" color="primary">
@@ -114,3 +114,5 @@ export default function SectionTwo()
     </Grid></div>
     );      
 }
+
+export default SectionOne;

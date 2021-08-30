@@ -90,7 +90,7 @@ function Cardeee() {
   );
 }
 
-export default function SectionTwo()
+function SectionThree()
 {
     const classes = useStyles();
     return(<div><Typography variant="h2" component="h2" color="primary">
@@ -114,3 +114,5 @@ export default function SectionTwo()
     </Grid></div>
     );      
 }
+
+export default SectionThree;
