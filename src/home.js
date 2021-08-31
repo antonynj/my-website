@@ -9,12 +9,12 @@ import './App.css';
 const theme = createTheme();
 
 theme.typography.h1 = {
-  fontSize: '1.8rem', fontFamily: 'lucida console',
+  fontSize: '1.8rem', fontFamily: 'Arial',
   '@media (min-width:600px)': {
-    fontSize: '1.8rem', fontFamily: 'lucida console',
+    fontSize: '1.8rem', fontFamily: 'Arial',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '3.4rem', fontFamily: 'lucida console',
+    fontSize: '3.4rem', fontFamily: 'Arial',
   },
 };
 
