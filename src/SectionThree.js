@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     minWidth: 200,
     paddingLeft: "40px",
     paddingRight: "40px",
+    paddingTop: "40px",
   },
   media: {
     height: 140,
@@ -93,9 +94,9 @@ function Cardeee() {
 function SectionThree()
 {
     const classes = useStyles();
-    return(<div><Typography variant="h2" component="h2" color="primary">
+    return(<div><Typography variant="h3" component="h3">
     MENU
-  </Typography><br></br>
+  </Typography>
         <Grid
       container
       spacing={4}

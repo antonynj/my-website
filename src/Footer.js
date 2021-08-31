@@ -4,8 +4,9 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import {Container, Grid, Box, AppBar} from '@material-ui/core';
+import './App.css';
 
-export default function Footer() {
+function Footer() {
     const displayDesktop = () => {
       
     };
@@ -62,3 +63,5 @@ export default function Footer() {
       </footer>
     );
   }
+
+  export default Footer;

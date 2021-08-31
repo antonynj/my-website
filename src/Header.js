@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -10,21 +9,23 @@ import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
 import Home from './home';
+import './App.css';
+import { useMediaQuery } from 'react-responsive';
+
 
 function Header(obj) {
   const { children, value, index, ...other } = obj;
 
   return (
-    <div
+    <div 
       role="tabpanel"
-
       hidden={value !== index}
       id={`sections-${index}`}
       aria-labelledby={`section-${index}`}
       {...other}
     >
       {value === index && (
-        <Box bgcolor="white" p={3}>
+        <Box p={3}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -46,41 +47,36 @@ function Page(index) {
 }
 
 function Link(obj) {
-    return (
+    return (<div className="Header">
       <Tab
         component="a"
         onClick={(event) => {
           event.preventDefault();
         }}
         {...obj}
-      />
+      /></div>
     );
   }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: "theme.palette.background.red",  
 
-  },
-  })
-);
 
  function Cards() {
-  const classes = useStyles();
+  
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const Values = (event, newValue) => {
     setValue(newValue);
   };
 
-
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 80px)",
+  });
 
   return (
       
-    <div className={classes.root} >
+    <div className="Headere" >
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+        <Tabs value={value} onChange={Values} aria-label="Sections" centered>
         <Link label="Home" href ="/home" {...Page(0)} />
         <Link label="Starters" href ="/SectionOne" {...Page(1)} />
         <Link label="Main course" href ="/SectionTwo" {...Page(2)} />
@@ -88,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
         </Tabs>
       </AppBar>
       <Header value={value} index={0}>
-        <Home />
+      {isMobileDevice && <Home />}
       </Header>
       <Header value={value} index={1}>
         <SectionOne />

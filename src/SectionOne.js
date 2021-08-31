@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     minWidth: 200,
     paddingLeft: "40px",
     paddingRight: "40px",
+    paddingTop: "40px",
   },
   media: {
     height: 140,
@@ -21,7 +22,7 @@ const useStyles = makeStyles({
 function Carde() {
   const classes = useStyles();
 
-  return (
+  return (<div className="Header">
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -33,11 +34,11 @@ function Carde() {
             Tandoori chicken wings
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Chicken wings marinated in a mixture of South Indian spices and yogurt, cooked in a special Tandoor clay oven and served with homemadechutney.
+            Chicken wings marinated in a mixture of South Indian spices and yogurt, cooked in a special Tandoor clay oven and served with homemade chutney.
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
+    </Card></div>
     
   );
 }
@@ -62,7 +63,6 @@ function Cardee() {
         </CardContent>
       </CardActionArea>
     </Card>
-    
   );
 }
 
@@ -93,9 +93,9 @@ function Cardeee() {
 function SectionOne()
 {
     const classes = useStyles();
-    return(<div><Typography variant="h2" component="h2" color="primary">
+    return(<div ><Typography variant="h3" component="h3">
     MENU
-  </Typography><br></br>
+  </Typography>
         <Grid
       container
       spacing={4}

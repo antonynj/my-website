@@ -22,16 +22,7 @@
   color: #61dafb;
 }
 
-.Footer{
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #051153;
-  color: rgb(255, 255, 255);
-  position:fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+
 
 body {
   margin: 0;
@@ -47,3 +38,42 @@ code {
     monospace;
 }
 
+.Header{
+  background-color: #000000;
+  color: rgb(250, 150, 0);
+  width: 100%;
+}
+
+.Headere{
+  background-color: #161515;
+  color: rgb(255, 255, 255);
+}
+
+.Footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #000000;
+  color: rgb(250, 150, 0);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile {
+  width: 80px;
+  height: 80px;
+  margin: 0% auto;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #e4dcf2;
+}
+
+.tablet-mobile {
+  width: 300px;
+  height: 100px;
+  background: #cab9e5;
+  margin: 0 auto;
+}
+.tablet-mobile p {
+  padding-top: 2%;
+}

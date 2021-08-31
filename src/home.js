@@ -1,19 +1,22 @@
 import React from 'react';
 import bg from './bg.jpg';
 import Typography from '@material-ui/core/Typography';
+import { useMediaQuery } from 'react-responsive';
+import './App.css';
 
 function Home() {
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 80px)",
+  });
   return (
     <div
       style={{
-        backgroundImage: `url(${bg})`,
+        //backgroundImage: `url(${bg})`,
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
-        width: '97vw',
-        height: '75vh'}}
-    ><body><br/><Typography variant="h1" component="h1" color="textPrimary" text-align='center'>
-    INDIAN CUISINES
-  </Typography></body></div>
+        width: '100vw',
+        height: '100vh'}}>{isMobileDevice}
+    </div>
     
   );
 }
