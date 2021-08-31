@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+.App-bg {
   height: 40vmin;
   pointer-events: none;
 }
@@ -47,6 +47,12 @@ code {
 .Headere{
   background-color: #161515;
   color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+  #bg {
+    width: 500px;
+  }
 }
 
 .Footer{

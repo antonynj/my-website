@@ -11,12 +11,12 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 const theme = createTheme();
 
 theme.typography.h3 = {
-  fontSize: '2.2rem',
+  fontSize: '1.5rem',
   '@media (min-width:600px)': {
-    fontSize: '2.5rem',
+    fontSize: '1.8rem', 
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '3.4rem',
+    fontSize: '2.4rem',
   },
 };
 
