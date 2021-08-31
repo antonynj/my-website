@@ -10,7 +10,6 @@ import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
 import Home from './home';
 import './App.css';
-import { useMediaQuery } from 'react-responsive';
 
 
 function Header(obj) {
@@ -68,10 +67,6 @@ function Link(obj) {
     setValue(newValue);
   };
 
-  const isMobileDevice = useMediaQuery({
-    query: "(min-device-width: 80px)",
-  });
-
   return (
       
     <div className="Headere" >
@@ -84,7 +79,7 @@ function Link(obj) {
         </Tabs>
       </AppBar>
       <Header value={value} index={0}>
-      {isMobileDevice && <Home />}
+      <Home />
       </Header>
       <Header value={value} index={1}>
         <SectionOne />

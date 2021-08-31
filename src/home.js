@@ -1,22 +1,28 @@
 import React from 'react';
 import bg from './bg.jpg';
 import Typography from '@material-ui/core/Typography';
-import { useMediaQuery } from 'react-responsive';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 
+const theme = createTheme();
+
+theme.typography.h1 = {
+  fontSize: '1.2rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '4.4rem',
+  },
+};
+
 function Home() {
-  const isMobileDevice = useMediaQuery({
-    query: "(min-device-width: 80px)",
-  });
   return (
-    <div
-      style={{
-        //backgroundImage: `url(${bg})`,
-        backgroundSize: '100%',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh'}}>{isMobileDevice}
-    </div>
+    <div>
+      <ThemeProvider theme={theme}>
+    <Typography variant="h1" component="h1" color="Primary" text-align='center'>
+    INDIAN CUISINE
+  </Typography></ThemeProvider></div>
     
   );
 }

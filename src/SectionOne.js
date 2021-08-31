@@ -6,6 +6,19 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Grid} from "@material-ui/core";
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: '2.2rem',
+  '@media (min-width:600px)': {
+    fontSize: '2.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '3.4rem',
+  },
+};
 
 const useStyles = makeStyles({
   root: {
@@ -93,9 +106,9 @@ function Cardeee() {
 function SectionOne()
 {
     const classes = useStyles();
-    return(<div ><Typography variant="h3" component="h3">
+    return(<div ><ThemeProvider theme={theme}><Typography variant="h3" component="h3">
     MENU
-  </Typography>
+  </Typography></ThemeProvider>
         <Grid
       container
       spacing={4}

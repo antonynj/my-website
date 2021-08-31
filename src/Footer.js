@@ -15,7 +15,7 @@ function Footer() {
       <footer>
           <div className="Footer">
           <Box>
-          <Container maxWidth='lg'>
+          <Container maxWidth="sm">
             
               <Grid item xs={12} >
                 <Box>
