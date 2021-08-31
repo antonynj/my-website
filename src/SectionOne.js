@@ -22,13 +22,13 @@ theme.typography.h3 = {
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 200,
+    minWidth: 140,
     paddingLeft: "40px",
     paddingRight: "40px",
     paddingTop: "40px",
   },
   media: {
-    height: 140,
+    height: 240,
   },
 });
 

@@ -9,12 +9,12 @@ import './App.css';
 const theme = createTheme();
 
 theme.typography.h1 = {
-  fontSize: '1.8rem', fontFamily: 'sans-serif',
+  fontSize: '1.8rem', fontFamily: 'lucida console',
   '@media (min-width:600px)': {
-    fontSize: '1.8rem', fontFamily: 'sans-serif',
+    fontSize: '1.8rem', fontFamily: 'lucida console',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '3.4rem', fontFamily: 'sans-serif',
+    fontSize: '3.4rem', fontFamily: 'lucida console',
   },
 };
 
@@ -22,15 +22,15 @@ function Home() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-    <Typography  variant="h1" component="h1" color="Primary" text-align='center'>
-    INDIAN CUISINE
-  </Typography><img src={bg} className="App-bg" alt="bg" />
+        <Typography  variant="h1" component="h1" color="Primary" text-align='center'>
+          Indian Cuisine
+        </Typography><img src={bg} className="App-bg" alt="bg" />
         <a
           href="./bg.jpg"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a></ThemeProvider>
+          rel="noopener noreferrer">
+        </a>
+      </ThemeProvider>
   </div>
     
   );
