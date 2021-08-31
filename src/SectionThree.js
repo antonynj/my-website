@@ -10,9 +10,9 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     minWidth: 200,
-    paddingLeft: "40px",
-    paddingRight: "40px",
-    paddingTop: "40px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
+    paddingTop: "30px",
   },
   media: {
     height: 240,

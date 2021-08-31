@@ -69,7 +69,7 @@ function Link(obj) {
 
   return (
       
-    <div className="Headere" >
+    <div className="Headere">
       <AppBar position="static">
         <Tabs value={value} onChange={Values} aria-label="Sections" centered>
         <Link label="Home" href ="/home" {...Page(0)} />
