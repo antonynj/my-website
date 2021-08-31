@@ -10,12 +10,12 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     minWidth: 200,
-    paddingLeft: "40px",
-    paddingRight: "40px",
-    paddingTop: "40px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
+    paddingTop: "30px",
   },
   media: {
-    height: 140,
+    height: 300,
   },
 });
 
@@ -80,7 +80,7 @@ function Cardeee() {
             Ghee Pongal
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Boiled ghee rice and lentils with cashew nuts and South Indian spices, served with sambar and chutney.
+            Boiled ghee rice and lentils with cashew nuts and South Indian spices, served with sambar.
            </Typography> 
         </CardContent>
       </CardActionArea>

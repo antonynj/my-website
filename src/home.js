@@ -9,7 +9,7 @@ import './App.css';
 const theme = createTheme();
 
 theme.typography.h1 = {
-  fontSize: '1.8rem', fontFamily: 'sans-serif',
+  fontSize: '1.5rem', fontFamily: 'sans-serif',
   '@media (min-width:600px)': {
     fontSize: '1.8rem', fontFamily: 'sans-serif',
   },
@@ -28,7 +28,6 @@ function Home() {
         <a
           href="./bg.jpg"
           target="_blank"
-          rel="noopener noreferrer"
         >
         </a></ThemeProvider>
   </div>
